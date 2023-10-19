@@ -281,7 +281,7 @@ function App() {
           }
           notify(
             `${signature}`,
-            `https://solscan.io/tx/${signature}`,
+            `https://solscan.io/tx/${signature}?cluster=custom&customUrl=https%3A%2F%2Fstaging-rpc.dev.eclipsenetwork.xyz`,
             "View on Solscan"
           );
         } else {
