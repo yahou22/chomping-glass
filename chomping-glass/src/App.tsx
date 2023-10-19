@@ -17,7 +17,7 @@ import { toast } from "react-toastify";
 window.Buffer = Buffer;
 
 const PROGRAM_ID = new PublicKey(
-  "ChompZg47TcVy5fk2LxPEpW6SytFYBES5SHoqgrm8A4D"
+  "Gg9RXnAuiQDYadKP4tExAFCkhXSc3kBywCGqqPVx2duH"
 );
 const FEE = new PublicKey("EGJnqcxVbhJFJ6Xnchtaw8jmPSvoLXfN2gWsY9Etz5SZ");
 
@@ -228,6 +228,10 @@ function App() {
       console.log(
         `https://explorer.solana.com/tx/${signature}?cluster=custom&customUrl=http%3A%2F%2Flocalhost%3A8899`
       );
+    } else if (connection.rpcEndpoint.includes("eclipsenetwork")) {
+      console.log(
+          `https://solscan.io/tx/${signature}?cluster=custom&customUrl=https%3A%2F%2Fstaging-rpc.dev.eclipsenetwork.xyz`
+      );
     } else {
       console.log(`https://solscan.io/tx/${signature}`);
     }
@@ -409,8 +413,13 @@ function App() {
   return (
     <div>
       <h1 style={{ display: "flex", justifyContent: "center" }}>
-        Chomping Glass
+        Chomping Glass: Eclipse Devnet
       </h1>
+      <div
+              style={{ display: "flex", padding: "5px", justifyContent: "center", fontWeight: "bold" }}
+      >
+        You'll need to install an&nbsp;<a href="https://docs.eclipse.builders/building-on-eclipse/developer-wallet-setup">Eclipse developer wallet</a> &nbsp;to play this game.
+      </div>
       <div
         style={{ display: "flex", padding: "5px", justifyContent: "center" }}
       >
@@ -470,7 +479,7 @@ function App() {
       <div
         style={{ display: "flex", padding: "5px", justifyContent: "center" }}
       >
-        Each game requires a deposit of 0.001◎ (SOL) to play.
+        Each game requires a deposit of 0.001◎ (ETH) to play.
       </div>
       <div
         style={{ display: "flex", padding: "5px", justifyContent: "center" }}
