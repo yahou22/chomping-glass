@@ -4,6 +4,7 @@
   "homepage": "https://www.chompingglass.com",
   "private": true,
   "dependencies": {
+    "@drift-labs/snap-wallet-adapter": "^0.2.2",
     "@solana/wallet-adapter-react": "^0.15.35",
     "@solana/wallet-adapter-react-ui": "^0.9.34",
     "@solana/wallet-adapter-wallets": "^0.19.1",

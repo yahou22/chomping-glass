@@ -13,6 +13,7 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 import { ToastContainer } from "react-toastify";
 import { SolflareWalletAdapter } from "@solana/wallet-adapter-wallets";
+import { SnapWalletAdapter } from '@drift-labs/snap-wallet-adapter';
 
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
@@ -27,7 +28,7 @@ function Root() {
     <ConnectionProvider
       endpoint={!isDevelopment ? RPC_URL : `${RPC_URL}${RPC_TOKEN}`}
     >
-      <WalletProvider wallets={[new SolflareWalletAdapter()]} autoConnect>
+      <WalletProvider wallets={[new SnapWalletAdapter()]} autoConnect>
         <WalletModalProvider>
           <div
             style={{

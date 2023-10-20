@@ -1356,6 +1356,15 @@
   resolved "https://registry.npmjs.org/@csstools/selector-specificity/-/selector-specificity-2.2.0.tgz"
   integrity sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==
 
+"@drift-labs/snap-wallet-adapter@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/@drift-labs/snap-wallet-adapter/-/snap-wallet-adapter-0.2.2.tgz"
+  integrity sha512-m7XnwEg326VUhtIDqPL//rz1b5RH0hKkhCOTXoeBg2RefLWUWR3UR7YguGo9967VQWNAX9gqSngPza5DM/R27w==
+  dependencies:
+    "@solana/wallet-adapter-base" "^0.9.22"
+    "@solana/web3.js" "^1.76.0"
+    typescript "^5.0.4"
+
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
   resolved "https://registry.npmjs.org/@emotion/babel-plugin/-/babel-plugin-11.11.0.tgz"
@@ -2510,7 +2519,7 @@
   dependencies:
     "@solana/wallet-adapter-react" "^0.15.35"
 
-"@solana/wallet-adapter-base@*", "@solana/wallet-adapter-base@^0.9.17", "@solana/wallet-adapter-base@^0.9.23":
+"@solana/wallet-adapter-base@*", "@solana/wallet-adapter-base@^0.9.17", "@solana/wallet-adapter-base@^0.9.22", "@solana/wallet-adapter-base@^0.9.23":
   version "0.9.23"
   resolved "https://registry.npmjs.org/@solana/wallet-adapter-base/-/wallet-adapter-base-0.9.23.tgz"
   integrity sha512-apqMuYwFp1jFi55NxDfvXUX2x1T0Zh07MxhZ/nCCTGys5raSfYUh82zen2BLv8BSDj/JxZ2P/s7jrQZGrX8uAw==
@@ -2888,7 +2897,7 @@
     "@wallet-standard/app" "^1.0.1"
     "@wallet-standard/base" "^1.0.1"
 
-"@solana/web3.js@*", "@solana/web3.js@^1.36.0", "@solana/web3.js@^1.44.3", "@solana/web3.js@^1.5.0", "@solana/web3.js@^1.50.1", "@solana/web3.js@^1.58.0", "@solana/web3.js@^1.63.0", "@solana/web3.js@^1.63.1", "@solana/web3.js@^1.77.3":
+"@solana/web3.js@*", "@solana/web3.js@^1.36.0", "@solana/web3.js@^1.44.3", "@solana/web3.js@^1.5.0", "@solana/web3.js@^1.50.1", "@solana/web3.js@^1.58.0", "@solana/web3.js@^1.63.0", "@solana/web3.js@^1.63.1", "@solana/web3.js@^1.76.0", "@solana/web3.js@^1.77.3":
   version "1.87.1"
   resolved "https://registry.npmjs.org/@solana/web3.js/-/web3.js-1.87.1.tgz"
   integrity sha512-E8Y9bNlZ8TQlhOvCx1b7jG+TjA4SJLVwufmIk1+tcQctUhK5HiB1Q8ljd4yQDkFlk6OOeAlAeqvW0YntWJU94Q==
@@ -13538,6 +13547,11 @@ typedarray-to-buffer@^3.1.5:
   version "4.9.5"
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
+
+typescript@^5.0.4:
+  version "5.2.2"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-5.2.2.tgz"
+  integrity sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==
 
 uglify-es@^3.1.9:
   version "3.3.9"
