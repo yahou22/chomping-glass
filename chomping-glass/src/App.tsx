@@ -17,9 +17,9 @@ import { toast } from "react-toastify";
 window.Buffer = Buffer;
 
 const PROGRAM_ID = new PublicKey(
-  "Gg9RXnAuiQDYadKP4tExAFCkhXSc3kBywCGqqPVx2duH"
+  "9bPcGkAbtgaCN3t9a9YqG3jx4A1djbZHPwrAWBQYHW8Q"
 );
-const FEE = new PublicKey("EGJnqcxVbhJFJ6Xnchtaw8jmPSvoLXfN2gWsY9Etz5SZ");
+const FEE = new PublicKey("EppmEb4r4wG6ntFg8j2wKYUiqBN54CQiatEkB5WT4Mwi");
 
 type GameState = {
   eaten: boolean[][];
